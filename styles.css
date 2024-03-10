@@ -34,7 +34,7 @@ h1{
 }
 .features-container{
     padding: 20px;
-    justify-content: flex-start;
+    font-size: 60px;
     height: fit-content;
     display: flex;
     flex-wrap: wrap;
@@ -68,12 +68,36 @@ h1{
     text-align: left;
     font-family:Montserrat;
 }
-@media screen and (max-width:600px) {
+
+@media screen and (min-width:150px) and (max-width:340px){
+
     .header-text{
-        font-size: 60px;
+        font-size: 40px;
+    }
+    .feature-images{
+        height: 170px;
+         }
+         .impact{
+            width: 250px;
+            
+         }
+
+         .pixel{
+            width:250px;
+         }
+}
+
+
+
+/* For medium screen sizes */
+
+@media screen and (min-width:340px) and (max-width:600px) {
+    .header-text{
+        font-size: 40px;
     }
     .features-container{
         padding: 0;
+        justify-content: flex-start;
     }
     .feature{width: 100%;}
 
@@ -83,4 +107,17 @@ h1{
     }
     .vision{width: 98%;
     height: 250px;}
+}
+
+/* 
+for large screens
+
+*/
+@media  screen and (min-width:1000px) {
+  .features-container{
+    justify-content: center;
+  }
+ .feature{
+    width: 300px;
+ }
 }
